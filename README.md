@@ -108,18 +108,21 @@ title("Demodulated Signal");
 
 
 Output Waveform
+<img width="1919" height="879" alt="Screenshot 2025-10-13 194631" src="https://github.com/user-attachments/assets/c0e872c9-33e4-4edf-a02b-ab86da3baeea" />
 
 
 
 
 
 TABULATION:
+![tabulation Image 2025-10-13 at 20 55 08_d8fa1d45](https://github.com/user-attachments/assets/484624a4-ba65-48e0-b279-4836811f6c35)
+![tabulation Image 2025-10-13 at 20 55 09_d5ff570c](https://github.com/user-attachments/assets/f1d8d3ba-a784-44e8-a005-c2b95796d83c)
 
 
 
 Calculation
-1.	ma (Theory) = am/ac =
-2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
+1.	ma (Theory) = am/ac = 0.4
+2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) = 0.11816
 
 
 MODEL GRAPH
