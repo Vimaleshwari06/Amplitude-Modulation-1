@@ -7,7 +7,7 @@ AIM:
 To generate and detect the amplitude modulation and demodulation u s i n g S C I L A B and to calculate modulation index of AM.
 
 EQUIPMENTS REQUIRED
-
+ 
 •	Computer with i3 Processor
 
 •	SCI LAB
@@ -75,7 +75,36 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	Verify the generated waveform using Tabulation and Model Waveform
 
 Program
+```
+Am=10; 
+Fm=5; 
+Ac=20; 
+Fc=50; 
+Fs=500; 
+t=0:1/Fs:2/Fm; 
+em = Am*sin(2*3.14*Fm*t); 
+subplot(4,1,1); 
+plot(t,em); 
+title("Message Signal");
+xgrid; 
+ec = Ac*sin(2*3.14*Fc*t); 
+subplot(4,1,2); 
+plot(t,ec); 
+title("Carrier Signal");
+xgrid; 
+eam = (Ac+(Am*sin(2*3.14*Fm*t))).*sin(2*3.14*Fc*t); 
+subplot(4,1,3); 
+plot(t,eam); 
+title("AM Signal");
+xgrid; 
+demodulated_signal = abs(hilbert(eam)) - Ac; 
+subplot(4,1,4); 
+plot(t, demodulated_signal); 
+title("Demodulated Signal");
+ 
 
+
+```
 
 
 Output Waveform
