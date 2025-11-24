@@ -76,11 +76,11 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 
 Program
 ```
-Am=10; 
-Fm=5; 
-Ac=20; 
-Fc=50; 
-Fs=500; 
+Am=2.24; 
+Fm=12; 
+Ac=5.6; 
+Fc=24; 
+Fs=240; 
 t=0:1/Fs:2/Fm; 
 em = Am*sin(2*3.14*Fm*t); 
 subplot(4,1,1); 
@@ -95,12 +95,13 @@ xgrid;
 eam = (Ac+(Am*sin(2*3.14*Fm*t))).*sin(2*3.14*Fc*t); 
 subplot(4,1,3); 
 plot(t,eam); 
-title("AM Signal");
+title("AM Modulated Signal");
 xgrid; 
 demodulated_signal = abs(hilbert(eam)) - Ac; 
 subplot(4,1,4); 
 plot(t, demodulated_signal); 
 title("Demodulated Signal");
+ 
  
 
 
@@ -110,14 +111,11 @@ title("Demodulated Signal");
 Output Waveform
 <img width="1919" height="879" alt="Screenshot 2025-10-13 194631" src="https://github.com/user-attachments/assets/c0e872c9-33e4-4edf-a02b-ab86da3baeea" />
 
-
-
-
-
 TABULATION:
-![tabulation Image 2025-10-13 at 20 55 08_d8fa1d45](https://github.com/user-attachments/assets/484624a4-ba65-48e0-b279-4836811f6c35)
-![tabulation Image 2025-10-13 at 20 55 09_d5ff570c](https://github.com/user-attachments/assets/f1d8d3ba-a784-44e8-a005-c2b95796d83c)
 
+![WhatsApp Image 2025-11-24 at 13 11 57_e783bfa1](https://github.com/user-attachments/assets/0bbbe62c-020b-4ad0-b538-71ecea1f1826)
+
+![WhatsApp Image 2025-11-24 at 13 11 58_1756d65f](https://github.com/user-attachments/assets/fb6b8fe7-707a-4587-8db1-ff40d5b4abaf)
 
 
 Calculation
